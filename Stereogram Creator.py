@@ -10,6 +10,12 @@ from PIL import Image, ImageTk
 import tkinter as tk
 from tkinter import ttk, filedialog, simpledialog
 from random import randrange
+import os
+
+base_dir = 'required_images'
+texture_img_path = os.path.join(base_dir, "blue.jpg")
+Depthmap_path = os.path.join(base_dir, "torusDepth.png")
+Head_image_path = os.path.join(base_dir, "Head.png")
 
 # Miscellaneous functions
 def img_to_arr(Depthmap):
@@ -88,8 +94,8 @@ E = round(2.5 * DPI) # 2.5 Inches
 maxsep = separation(0)
 
 # Example Image
-texture_img = Image.open("Images/Texture Images/blue.jpg").convert('RGB')
-Depthmap = Image.open("Images/Depth Images/torusDepth.png").convert('L')
+texture_img = Image.open(texture_img_path).convert('RGB')
+Depthmap = Image.open(Depthmap_path).convert('L')
 Z = img_to_arr(Depthmap)
 maxX, maxY = Depthmap.width, Depthmap.height
 #print("Z(w,h) = " +  str(maxX) + " " +  str(maxY) )
@@ -165,7 +171,7 @@ left_frame = tk.Frame(window, padx=15, pady=15)
 left_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
 
 # Head image
-Head_image_file = Image.open("Images/Head.png").resize((352, 228))
+Head_image_file = Image.open(Head_image_path).resize((352, 228))
 Head_image = ImageTk.PhotoImage(Head_image_file)
 Head_image_ = tk.Label(left_frame, image=Head_image)
 Head_image_.grid(row=1, column=0, padx=0, pady=0, 
