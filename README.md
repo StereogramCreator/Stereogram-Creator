@@ -19,6 +19,7 @@ The application requires Python and the following libraries:
 - `numpy`
 - `Pillow`
 - `tkinter` (comes pre-installed with Python)
+-  `os` (comes pre-installed with Python)
 
 ## Setup Instructions
 1. Clone the repository or download the project files.
