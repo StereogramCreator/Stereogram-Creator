@@ -1,33 +1,28 @@
+# Stereogram Creator
 
-# Project Title
+This is a Python-based GUI application to create and visualize stereograms using depth maps and texture images. The project was developed as part of a the Matura project by Nuno Furrer in 2024.
 
-This project uses several Python libraries as well as `tkinter` (for GUI development, if applicable). Below are details about the dependencies.
+## Features
+- Import texture and depth images.
+- Configure DPI and adjust stereogram settings.
+- Toggle hidden surface removal.
+- Create stereograms using different algorithms:
+  - Left-Right constraint.
+  - Right-Left constraint.
+  - Center-Side constraint.
+- Preview texture and depth maps before processing.
+- Export the generated stereogram as an image file.
+- Interactive visualization features such as sliders and toggles.
 
 ## Requirements
+The application requires Python and the following libraries:
+- `numpy`
+- `Pillow`
+- `tkinter` (comes pre-installed with Python)
 
-### Python Packages
-
-- `requests==2.31.0`: Used for making HTTP requests.
-- `numpy==1.24.4`: A powerful library for numerical computations.
-
-### Additional Notes
-
-- `tkinter` (often referred to as `tk`) is a part of Python's standard library and cannot be installed via `pip`. 
-- If you're using a Linux system, you may need to install `tkinter` manually.
-
-#### Installation on Linux
-For Debian/Ubuntu-based systems:
-```bash
-sudo apt install python3-tk
-```
-For Fedora/Red Hat-based systems:
-```bash
-sudo dnf install python3-tkinter
-```
-
-## How to Install Dependencies
-
-Install the Python packages listed in the `requirements.txt` file using `pip`:
-```bash
-pip install -r requirements.txt
-```
+## Setup Instructions
+1. Clone the repository or download the project files.
+2. Ensure Python (>=3.7) is installed on your system.
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
