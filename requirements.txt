@@ -3,5 +3,6 @@
 numpy
 Pillow
 tk
+os
 
-# Note: tkinter (tk) is part of Python's standard library
+# Note: tkinter (tk) and os is part of Python's standard library
