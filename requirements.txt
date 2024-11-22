@@ -1,11 +1,7 @@
-
-# Standard Python packages
 # The following are dependencies required for the project.
 
-requests==2.31.0  # Example dependency
-numpy==1.24.4     # Example dependency
+numpy
+Pillow
+tk
 
-# Note: tkinter (tk) is part of Python's standard library and cannot be installed via pip.
-# On Linux systems, you might need to install it separately. For example:
-# Ubuntu/Debian: sudo apt install python3-tk
-# Fedora/Red Hat: sudo dnf install python3-tkinter
+# Note: tkinter (tk) is part of Python's standard library
