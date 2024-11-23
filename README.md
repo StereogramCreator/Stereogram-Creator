@@ -7,9 +7,9 @@ This is a Python-based GUI application to create and visualize stereograms using
 - Configure DPI and adjust stereogram settings.
 - Toggle hidden surface removal.
 - Create stereograms using different algorithms:
-  - Left-Right constraint.
-  - Right-Left constraint.
-  - Center-Side constraint.
+  - Left-Right
+  - Right-Left
+  - Center-Side
 - Preview texture and depth maps before processing.
 - Export the generated stereogram as an image file.
 - Interactive visualization features such as sliders and toggles.
@@ -23,7 +23,7 @@ The application requires Python and the following libraries:
 
 ## Setup Instructions
 1. Clone the repository or download the project files.
-2. Ensure Python (>=3.7) is installed on your system.
+2. Ensure Python is installed on your system.
 3. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
