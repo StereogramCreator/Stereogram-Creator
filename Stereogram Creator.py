@@ -12,7 +12,7 @@ from tkinter import ttk, filedialog, simpledialog
 from random import randrange
 import os
 
-base_dir = 'Required Images'
+base_dir = 'Stereogram-Creator-main/Required Images'
 texture_img_path = os.path.join(base_dir, "blue.jpg")
 Depthmap_path = os.path.join(base_dir, "torusDepth.png")
 Head_image_path = os.path.join(base_dir, "Head.png")
