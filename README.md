@@ -1,6 +1,6 @@
 # Stereogram Creator
 
-This is a Python-based GUI application to create and visualize stereograms using depth maps and texture images. The project was developed as part of a the Matura project by Nuno Furrer in 2024.
+This is a Python-based GUI application to create and visualize stereograms using depth maps and texture images. The project was developed as part of the Matura project by Nuno Furrer in 2024.
 
 ## Features
 - Import texture and depth images.
